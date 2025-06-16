@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kiran Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    .logo-k-animated {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ffffff, #dbe6ff);
+      color: rgb(69, 71, 255);
+      font-weight: 700;
+      font-size: 24px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      animation: pulseGlow 2s infinite ease-in-out;
+      transition: transform 0.3s;
+    }
+
+    .logo-k-animated:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(69, 71, 255, 0.5);
+      }
+      100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    .brand-name {
+      letter-spacing: 1px;
+    }
+    .small-hero-img {
+      width: 75%;
+      height: 75%;
+      border-radius: 20px;
+    }
+    .project-img {
+      width: 85;
+      height: 85%;
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+    .card-img-top {
+      height: 300px;
+    }
+    #home
+    {
+      text-align: center;
+      padding-top: 7%;
+    }
+    .main
+    {
+      height: 80vh;
+    }
+  </style>
+</head>
+<body class="p-3 text-white d-flex flex-column" style="background-color: rgb(69, 71, 255); min-height: 100vh;">
+
+<nav class="navbar navbar-expand-lg p-2" style="background-color: rgba(69, 72, 255, 0.723);" id="home">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center gap-3 text-white fs-4 fw-bold" href="#">
+      <div class="logo-k-animated d-flex justify-content-center align-items-center">K</div>
+      <span class="brand-name">Kiran</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+  <ul class="navbar-nav ms-auto nav-underline fs-5">
+        <li class="nav-item me-4">
+          <a class="nav-link text-white" href="#about">About Me</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link text-white" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link text-white" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<main class="flex-grow-1 d-flex align-items-end main" >
+  <div class="container mb-4">
+    <div class="row align-items-center">
+  <div class="col-md-6 text-center order-1 order-md-2 mb-4 mb-md-0">
+    <img src="https://res.cloudinary.com/dhb2zxa7t/image/upload/v1750068145/me1_gujcw9.png" alt="Kiran Image" class="small-hero-img">
+  </div>
+  <div class="col-md-6 order-2 order-md-1">
+    <h1 class="display-5 fw-bold text-white">Hello 👋 I'm <span style="color: #FFD700;">Kiran</span>,</h1>
+    <p class="lead mt-3 text-white">
+      I'm a passionate Computer Science Engineering student and aspiring web developer, dedicated to crafting clean, user-friendly digital experiences.
+      I love building interactive websites and applications that are both functional and visually appealing.
+    </p>
+    <div class="mt-4">
+  <a href="https://www.linkedin.com/in/kiran-naga-sriram" target="_blank" class="text-white fs-4 me-3">
+    <i class="bi bi-linkedin"></i>
+  </a>
+</div>
+
+</div>
+
+  </div>
+</main>
+
+<!-- About Section -->
+<section id="about" class="py-5" style="background-color: #5c5eff; min-height: 100vh;">
+  <div class="container text-white py-5">
+    <h2 class="fw-bold text-center mb-4 display-4">About Me</h2>
+    <p class="lead text-center fs-10">
+      I'm Kiran Naga Sriram, a Computer Science Engineering student with a passion for web development and UI/UX design. I enjoy building interactive, accessible, and beautiful websites using HTML, CSS, Bootstrap, and modern JavaScript frameworks like React.
+    </p>
+    <p class="lead text-center fs-5">
+      I’ve worked on educational platforms, student dashboards, and ride-booking apps. I'm also a teacher by nature — I love creating demo lessons, explaining English grammar, and designing engaging learning experiences.
+    </p>
+    <p class="lead text-center fs-5">
+      Whether it's designing a website, building full-stack apps, or presenting literature with clarity, I always aim to combine creativity with usability.
+    </p>
+    <div id="home">
+      <a href="#home" class="btn btn-light btn-lg">home</a>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-5" style="background-color: #f8f9fa; min-height: 100vh;">
+  <div class="container py-5">
+    <h2 class="text-center fw-bold mb-5 display-4 text-dark">Projects</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://res.cloudinary.com/dhb2zxa7t/image/upload/v1750068145/hostel_management_ytidoj.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Hostel Management Portal</h5>
+            <p class="card-text">Hostel Management Portal – Sri Vasavi Engineering College
+
+This portal offers a centralized platform for managing hostel operations efficiently. Key features include:
+
+Student Occupancy Tracking – Real-time data on filled and vacant rooms.
+
+Complaint Management – Easy logging and tracking of issues like leaks, locks, and internet problems.
+
+Room & Attendance Monitoring – Daily attendance and room allocation details.
+</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+  <div class="card h-100">
+    <img src="https://res.cloudinary.com/dhb2zxa7t/image/upload/v1750068150/vasavi_ride_ynxivw.png" class="card-img-top" alt="Vasavi Ride Project Image">
+    <div class="card-body">
+      <h5 class="card-title">Vasavi Ride – Smart Campus Bike Booking App</h5>
+      <p class="card-text">
+        Vasavi Ride is a campus-friendly bike booking solution built to offer students and faculty fast, eco-friendly transportation within the college. Inspired by Rapido, this app ensures quick booking, real-time tracking, and a smooth UI/UX experience.
+      </p>
+    </div>
+  </div>
+</div>
+
+      <div class="col">
+  <div class="card h-100">
+    <img src="https://res.cloudinary.com/dhb2zxa7t/image/upload/v1750068148/legacy_quest_fsq88g.png"  class="card-img-top" alt="Legacy Quest Game Image">
+    <div class="card-body">
+      <h5 class="card-title">Legacy Quest (A Multiplayer Adventure Game)</h5>
+      <p class="card-text">
+        Legacy Quest is a 2D multiplayer adventure game built using the Unity Engine and C#. 
+        Players team up in a fantasy world to solve puzzles, defeat enemies, and uncover ancient secrets. 
+        Featuring real-time interaction, quest-based progression, and immersive environments, 
+        it showcases my skills in game logic, level design, and Unity networking.
+      </p>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div id="home">
+      <a href="#home" class="btn btn-primary btn-lg">home</a>
+  </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5" style="background-color: #181D3D; min-height: 100vh;">
+  <div class="container text-white py-5">
+    <h2 class="text-center fw-bold mb-5 display-4">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form action="https://formspree.io/f/mrbkklda" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-light">Send Message</button>
+        <a href="#home" class="btn btn-light btn-lg  pt-1 pb-1">home</a>
+      </form> 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Resume Download -->
+<section class="py-5 bg-white text-center" style="min-height: 60vh;">
+  <div class="container py-5">
+    <h2 class="fw-bold mb-4 display-4 text-dark">Download My Resume</h2>
+    <a href="resume.pdf" class="btn btn-primary btn-lg " download >Download PDF</a>
+    <a href="#home" class="btn btn-primary btn-lg ">home</a>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
